@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 105 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="73.84" y1="-563.14" x2="-2.44" y2="-536.85" gradientTransform="translate(580.95 222.13) rotate(-76.83)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4b0094" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#000047"/>
+    </linearGradient>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="4"/>
+      <feFlood flood-color="#9414c9" flood-opacity=".15"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <circle class="cls-1" cx="52.58" cy="52.66" r="40.02"/>
+  </g>
+</svg>

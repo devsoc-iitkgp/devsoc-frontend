@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 201">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: .28;
+      }
+
+      .cls-3 {
+        fill: #f000f4;
+        mix-blend-mode: screen;
+        opacity: .45;
+      }
+
+      .cls-4 {
+        opacity: .27;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6161.49" y1="31.52" x2="6073.11" y2="184.59" gradientTransform="translate(6222) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4b0094" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#000047"/>
+    </linearGradient>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="4"/>
+      <feFlood flood-color="#9414c9" flood-opacity=".15"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Capa_1" data-name="Capa 1">
+        <g>
+          <circle class="cls-5" cx="100.32" cy="100.48" r="87.68"/>
+          <g class="cls-4">
+            <path class="cls-3" d="M63.24,52.6c6.48,5.71,3.52,19.66-6.61,31.16-10.13,11.51-23.6,16.21-30.08,10.5-6.48-5.71-3.52-19.66,6.61-31.16,10.13-11.51,23.6-16.21,30.08-10.5Z"/>
+            <path class="cls-3" d="M97.73,30.35c2.37,4.49-2.17,11.55-10.14,15.76-7.97,4.21-16.36,3.99-18.73-.5-2.37-4.49,2.17-11.55,10.14-15.76,7.97-4.21,16.36-3.99,18.73,.5Z"/>
+          </g>
+          <path class="cls-2" d="M109.58,123.63v10.21c17.3,0,30.76-16.71,25.11-34.83-2.47-7.92-8.77-14.21-16.69-16.69-18.12-5.66-34.83,7.81-34.83,25.11h10.23s0,0,0,0c0-10.85,10.74-19.25,22.16-15.11,4.23,1.53,7.6,4.91,9.14,9.13,4.14,11.41-4.24,22.14-15.08,22.16v-10.17s0,0,0,0h-10.2s0,0,0,0v10.2h10.18Zm-10.18,7.84h-7.84v-7.84h7.84v7.84s0,0,0,0Zm-7.83-7.84h-6.57s0,0,0,0v-6.56s0,0,0,0h6.56s0,0,0,0v6.57Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
