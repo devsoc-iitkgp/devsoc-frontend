@@ -1,6 +1,8 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* width */
 ::-webkit-scrollbar {
@@ -521,7 +523,7 @@
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    background: url("../img/banner_new.jpg");
+    background: url("assets/img/banner_new.jpg");
     background-repeat: no-repeat;
     background-position: center !important;
     position: relative;
@@ -984,7 +986,7 @@
   }
   
   .about .video-box {
-    background: url("../img/about.png") center center no-repeat;
+    background: url("assets/img/about.png") center center no-repeat;
     background-size: contain;
     min-height: 300px;
   }
@@ -1227,7 +1229,7 @@
   --------------------------------------------------------------*/
   .testimonials {
     padding: 80px 0;
-    background: url("../img/cta-bg.jpg") no-repeat;
+    background: url("assets/img/cta-bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
