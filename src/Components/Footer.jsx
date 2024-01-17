@@ -1,4 +1,4 @@
-import DevSocLogo from '../assets/img/Devsoc_Logo.png';
+import DevSocLogo from "../assets/img/DevSoc_Logo.png"
 import SlackLogo from '../assets/img/slack_devsoc.png';
 
 export default function Footer() {
