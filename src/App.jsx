@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Devmate from "./Pages/Devmate";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import "boxicons";
 import React from "react";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";

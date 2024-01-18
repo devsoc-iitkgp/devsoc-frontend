@@ -34,7 +34,10 @@ export default function FAQs() {
                         {
                             faqs.map((faq, ind) => (
                                 <li data-aos="fade-up" key={ind} >
-                                    <i className="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">{faq.question}<i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
+                                    <div className="question" style={{ display: "flex", alignItems: "center" }}>
+                                        <i className="bx bx-help-circle icon-help"></i>
+                                        <a data-bs-toggle="collapse" className="collapsed" data-bs-target="#faq-list-1" style={{ width: "100%" }}>{faq.question}<i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
+                                    </div>
                                     <div id="faq-list-1" className="collapse" data-bs-parent=".faq-list">
                                         <p>{faq.answer}</p>
                                     </div>

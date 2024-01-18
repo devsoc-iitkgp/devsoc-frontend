@@ -176,7 +176,7 @@
     transition: all 0.4s;
   }
   
-  .back-to-top i {
+  .back-to-top div.icon {
     font-size: 28px;
     color: #fff;
     line-height: 0;
@@ -300,7 +300,7 @@
   }
   
   .navbar a i,
-  .navbar a:focus i {
+  .navbar a:focus div.icon {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
@@ -361,7 +361,7 @@
     color: #01036f;
   }
   
-  .navbar .dropdown ul a i {
+  .navbar .dropdown ul a div.icon {
     font-size: 12px;
   }
   
@@ -500,7 +500,7 @@
   }
   
   .navbar-mobile .dropdown ul a i,
-  .navbar-mobile .dropdown .dropdown ul a i {
+  .navbar-mobile .dropdown .dropdown ul a div.icon {
     font-size: 12px;
   }
   
@@ -949,7 +949,7 @@
     transition: 0.5s;
   }
   
-  .about .icon-box .icon i {
+  .about .icon-box .icon div.icon {
     color: #235AF8;
     font-size: 32px;
   }
@@ -959,7 +959,7 @@
     border-color: #235AF8;
   }
   
-  .about .icon-box:hover .icon i {
+  .about .icon-box:hover .icon div.icon {
     color: #fff;
   }
   
@@ -1099,7 +1099,7 @@
     transition: ease-in-out 0.3s;
   }
   
-  .features .icon-box i {
+  .features .icon-box div.icon {
     font-size: 32px;
     padding-right: 10px;
     line-height: 1;
@@ -1143,7 +1143,7 @@
     background: #fff;
   }
   
-  .counts .count-box i {
+  .counts .count-box div.icon {
     position: absolute;
     top: -25px;
     left: 50%;
@@ -1197,7 +1197,7 @@
     padding-bottom: 10px;
   }
   
-  .details .content ul i {
+  .details .content ul div.icon {
     font-size: 20px;
     padding-right: 4px;
     color: #1acc8d;
@@ -1415,7 +1415,7 @@
     color: #1acc8d;
   }
   
-  .team .member .social i {
+  .team .member .social div.icon {
     font-size: 16px;
     margin: 0 2px;
   }
@@ -1476,7 +1476,7 @@
     padding-bottom: 16px;
   }
   
-  .pricing ul i {
+  .pricing ul div.icon {
     color: #1acc8d;
     font-size: 18px;
     padding-right: 4px;
@@ -1620,7 +1620,7 @@
     background: #fff;
   }
   
-  .contact .info i {
+  .contact .info div.icon {
     font-size: 20px;
     color: #3f43fd;
     float: left;
@@ -1654,9 +1654,9 @@
     margin-top: 40px;
   }
   
-  .contact .info .email:hover i,
-  .contact .info .address:hover i,
-  .contact .info .phone:hover i {
+  .contact .info .email:hover div.icon,
+  .contact .info .address:hover div.icon,
+  .contact .info .phone:hover div.icon {
     background: #3f43fd;
     color: #fff;
   }
@@ -1836,7 +1836,7 @@
     margin: 0;
   }
   
-  #footer .footer-top .footer-links ul i {
+  #footer .footer-top .footer-links ul div.icon {
     padding-right: 2px;
     color: #61ebba;
     font-size: 18px;
