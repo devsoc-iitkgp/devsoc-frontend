@@ -4,6 +4,18 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* Just trying */
+.Circle{
+  position: fixed;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #ff0000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 99;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -216,7 +228,6 @@
     z-index: 997;
     transition: all 0.5s;
     background: rgba(1, 4, 136, 0.9);
-    
   }
   
   #header.header-transparent {
@@ -270,6 +281,7 @@
   * Desktop Navigation 
   */
   .navbar {
+    z-index: 100;
     padding: 0;
   }
   
@@ -326,12 +338,12 @@
     width: 25px;
   }
   
-  .navbar a:hover,
+  /* .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover>a { */
     /* color: #fff; */
-  }
+  /* } */
   
   .navbar .dropdown ul {
     display: block;
@@ -833,7 +845,7 @@
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: #040249;
     font-family: "Poppins", sans-serif;
   }
   
@@ -1095,8 +1107,10 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background: #f5f5ff;
+    background: none;
+    box-shadow: -1px -1px 5px;
     transition: ease-in-out 0.3s;
+    border-radius: 20px;
   }
   
   .features .icon-box i {
@@ -1130,7 +1144,7 @@
   # Counts
   --------------------------------------------------------------*/
   .counts {
-    background: #f5f5ff;
+    /* background: #f5f5ff; */
     padding: 70px 0 60px;
   }
   
@@ -1140,7 +1154,8 @@
     width: 100%;
     position: relative;
     text-align: center;
-    background: #fff;
+    background: #4f3498;
+    color: white;
   }
   
   .counts .count-box i {
@@ -1617,7 +1632,7 @@
   --------------------------------------------------------------*/
   .contact .info {
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
   }
   
   .contact .info i {
@@ -1759,7 +1774,7 @@
       transform: rotate(360deg);
     }
   }
-  
+
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/

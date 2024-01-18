@@ -1,8 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Devmate from "./Pages/Devmate";
 import Aos from "aos";
 import "aos/dist/aos.css"
-import React from "react";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
@@ -14,9 +16,21 @@ import Team from "./Components/Team";
 import FAQs from "./Components/FAQs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
+import Circle from "./Components/Circle";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
     React.useEffect(() => {
+        gsap.to('body', {
+            backgroundColor: '#E2A9FF',
+            scrollTrigger: {
+              trigger: 'body',
+              start: 'top top',
+              end: 'bottom bottom',
+              scrub: true,
+            },
+        });
         Aos.init()
     }, [])
     return (
@@ -38,6 +52,7 @@ function Home() {
         <>
             <Hero />
             <section className="main">
+                <Circle />
                 <About />
                 <Features />
                 <Counts />
@@ -53,3 +68,4 @@ function Home() {
 }
 
 export default App
+
