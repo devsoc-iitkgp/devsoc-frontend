@@ -21,19 +21,22 @@ function App() {
         Aos.init()
     }, [])
     return (
-        <Router>
-            <Routes>
-                <Route index element={<Home />} />
-                <Route path="/devmate" element={<Devmate />} />
-            </Routes>
-        </Router>
+        <>
+            <Header />
+            <Router>
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="/devmate" element={<Devmate />} />
+                </Routes>
+            </Router>
+            <Footer />
+        </>
     )
 }
 
 function Home() {
     return (
         <>
-            <Header />
             <Hero />
             <section className="main">
                 <About />
@@ -45,7 +48,6 @@ function Home() {
                 <FAQs />
                 <ContactUs />
             </section>
-            <Footer />
         </>
 
     )
