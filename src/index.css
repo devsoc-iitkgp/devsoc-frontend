@@ -230,6 +230,10 @@
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   }
+
+  #header.header-scrolled nav a {
+    color: #010483;
+  }
   
   @supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
     (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
@@ -294,7 +298,7 @@
     font-size: 15px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    color: #010483;
+    color: white;
     white-space: nowrap;
     transition: 0.3s;
   }
