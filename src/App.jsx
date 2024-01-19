@@ -9,16 +9,18 @@ import About from "./Components/About";
 import Features from "./Components/Features";
 import Counts from "./Components/Counts";
 import Details from "./Components/Details";
-import Testimonials from "./Components/Testimonials";
 import Team from "./Components/Team";
 import FAQs from "./Components/FAQs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
+import useScript from "./Hooks/useScript";
 
 function App() {
     React.useEffect(() => {
         Aos.init()
     }, [])
+    useScript("/js/main.js")
+    useScript("/js/notice.js")
     return (
         <>
             <Router>
@@ -40,7 +42,6 @@ function Home() {
                 <Features />
                 <Counts />
                 <Details />
-                <Testimonials />
                 <Team />
                 <FAQs />
                 <ContactUs />
