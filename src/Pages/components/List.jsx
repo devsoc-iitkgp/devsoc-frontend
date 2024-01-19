@@ -20,7 +20,7 @@ const Card = ({setSelected,card}) => {
       }}
     >
       <div className="tw-w-[350px] tw-h-[500px] tw-bg-slate-400 tw-mb-4 tw-relative">
-        <div className="tw-absolute tw-top-0 tw-z-10 tw-h-[50%] tw-overflow-hidden tw-w-full tw-border-4 tw-border-solid tw-border-slate-700 tw-rounded-md tw-flex tw-justify-center tw-items-center">
+        <div className=" tw-bg-slate-100 tw-absolute tw-top-0 tw-z-10 tw-h-[50%] tw-overflow-hidden tw-w-full tw-border-4 tw-border-solid tw-border-slate-700 tw-rounded-md tw-flex tw-justify-center tw-items-center">
           <motion.img layoutId={`card-${card.ProjectID}`}
           src={card.Thumbnail} className=" tw-h-full tw-bg-red-400 tw-shadow-xl tw-rounded-sm tw-object-cover"/>
         </div>

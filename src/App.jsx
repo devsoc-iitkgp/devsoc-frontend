@@ -23,12 +23,14 @@ function App() {
     useScript("/js/notice.js")
     return (
         <>
+            <Header />
             <Router>
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/devmate" element={<Devmate />} />
                 </Routes>
             </Router>
+            <Footer />
         </>
     )
 }
