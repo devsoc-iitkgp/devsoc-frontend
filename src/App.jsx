@@ -21,14 +21,12 @@ function App() {
     }, [])
     return (
         <>
-            <Header />
             <Router>
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/devmate" element={<Devmate />} />
                 </Routes>
             </Router>
-            <Footer />
         </>
     )
 }
