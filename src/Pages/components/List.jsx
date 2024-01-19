@@ -42,7 +42,7 @@ function List({setSelected}) {
   return (
     <div className="tw-p-4">
       <h1 className="tw-text-center tw-font-bold tw-text-4xl tw-mb-8">All Projects</h1>
-      <div className="tw-flex tw-flex-wrap tw-gap-6 tw-justify-center tw-items-center">
+      <div className="tw-flex tw-flex-wrap tw-gap-16 tw-justify-center tw-items-center">
         {data.map((card)=>(
           <Card key={card.ProjectID} setSelected={setSelected} card={card}/>
         ))}

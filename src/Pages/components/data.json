@@ -166,5 +166,19 @@
         "Date": "2024-01-30",
         "Requests": ["user057", "user058"],
         "Members": ["user059", "user060"]
+      },
+      {
+        "ProjectID": "13",
+        "ProjectName": "Project Neu",
+        "ProjectDescription": "Description for Project Neu finding random paragraphs, that's exactly what this webpage provides. If both a random word and a random sentence aren't quite long enough for your needs, then a random paragraph might be the perfect solution",
+        "UserID": "user057",
+        "Tags": ["tag25", "tag26"],
+        "TotalCapacity": 29,
+        "ActiveMembers": 16,
+        "Thumbnail": "https:\/\/picsum.photos\/700\/321",
+        "ButtonClicks": 55,
+        "Date": "2024-01-03",
+        "Requests": ["user037", "user038"],
+        "Members": ["user049", "user040"]
       }
 ]
