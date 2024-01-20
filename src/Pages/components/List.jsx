@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import data from "./data.json";
 import {motion} from "framer-motion";
+import { useEffect } from "react";
 
 const Card = ({setSelected,card}) => {
   return(
@@ -30,7 +30,7 @@ const Card = ({setSelected,card}) => {
               return (
                 <div onClick={(e)=>{e.stopPropagation();}} className=" tw-bg-slate-700 tw-text-white tw-px-2 tw-py-1 tw-rounded-md tw-min-h-max tw-h-[35px] hover:tw-bg-slate-200 hover:tw-text-slate-900" key={tag}>{tag}</div>
               )
-            })}
+            })}{card.ProjectName}
           </div>
         </div>
       </div>
@@ -38,10 +38,11 @@ const Card = ({setSelected,card}) => {
   )
 }
 
-function List({setSelected}) {
+function List({setSelected,data}) {
+  useEffect(()=>{
+  },[data])
   return (
     <div className="tw-p-4">
-      <h1 className="tw-text-center tw-font-bold tw-text-4xl tw-mb-8">All Projects</h1>
       <div className="tw-flex tw-flex-wrap tw-gap-16 tw-justify-center tw-items-center">
         {data.map((card)=>(
           <Card key={card.ProjectID} setSelected={setSelected} card={card}/>

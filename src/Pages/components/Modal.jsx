@@ -9,7 +9,7 @@ function Modal({selected, setSelected}) {
     <div onClick={()=>{
       setSelected("")
     }} className="tw-fixed tw-inset-0 tw-bg-black/50 tw-z-50 tw-cursor-pointer tw-overflow-y-scroll tw-pt-[100px]">
-      <div onClick={(e)=>{e.stopPropagation();}} className="tw-w-full tw-max-w-[700px] tw-mx-auto tw-my-8 tw-px-8 tw-cursor-default">
+      <div onClick={(e)=>{e.stopPropagation();}} className="tw-w-full tw-max-w-max tw-mx-auto tw-my-8 tw-px-8 tw-cursor-default">
         <motion.div layoutId={`card-${selected.ProjectID}`} className="tw-flex tw-flex-col tw-justify-center tw-items-center">
           <img src={selected.Thumbnail}/>
         </motion.div>
