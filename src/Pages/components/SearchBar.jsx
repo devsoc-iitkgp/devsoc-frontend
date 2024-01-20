@@ -6,10 +6,17 @@ import { useState } from "react";
 function SearchBar({isOpen,setIsOpen,setSort,setSearch,searchval}) {
 
   const [active, setActive] = useState(null)
+  const [filteractive, setFilterActive] = useState(0)
 
   const handleSort = (e) => {
     setSort(e.target.value)
     setActive(e.target.value)
+    setIsOpen(false)
+  }
+
+  const handlefilter=(e) => {
+    setFilterActive(e.target.value)
+    setSort(e.target.value)
     setIsOpen(false)
   }
   
@@ -30,10 +37,13 @@ function SearchBar({isOpen,setIsOpen,setSort,setSearch,searchval}) {
                 e.stopPropagation();
               }} className={`tw-absolute tw-bg-[#e5d8ff] tw-bottom-0 tw-translate-y-full tw-right-0 tw-w-[250px] tw-z-50 ${isOpen?"tw-flex":"tw-hidden"} tw-flex-col tw-rounded-[8px] tw-text-black tw-font-semibold tw-shadow-xl tw-overflow-hidden tw-select-none`}>
                 <li className="tw-h-[30px] tw-flex tw-items-center tw-bg-[#a47eeb] tw-cursor-default tw-px-5 tw-py-5">Sort By</li>
-                <li onClick={handleSort} value={"1"} className={`tw-h-[30px] ${active==1?"tw-bg-[#b990ef]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Rating</li>
-                <li onClick={handleSort} value={"2"} className={`tw-h-[30px] ${active==2?"tw-bg-[#b990ef]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>A-Z</li>
-                <li onClick={handleSort} value={"3"} className={`tw-h-[30px] ${active==3?"tw-bg-[#b990ef]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Z-A</li>
-                <li onClick={handleSort} value={"4"} className={`tw-h-[30px] ${active==4?"tw-bg-[#b990ef]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Date</li>
+                <li onClick={handleSort} value={"1"} className={`tw-h-[30px] ${active==1?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Rating</li>
+                <li onClick={handleSort} value={"2"} className={`tw-h-[30px] ${active==2?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>A-Z</li>
+                <li onClick={handleSort} value={"3"} className={`tw-h-[30px] ${active==3?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Z-A</li>
+                <li onClick={handleSort} value={"4"} className={`tw-h-[30px] ${active==4?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Date</li>
+                <li className="tw-h-[30px] tw-flex tw-items-center tw-bg-[#a47eeb] tw-cursor-default tw-px-5 tw-py-5">Filter</li>
+                <li onClick={handlefilter} value={"0"} className={`tw-h-[30px] ${filteractive==0?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>All</li>
+                <li onClick={handlefilter} value={"5"} className={`tw-h-[30px] ${filteractive==5?"tw-bg-[#c09ced]":""} tw-flex tw-items-center hover:tw-bg-[#f0e8ff] tw-px-5 tw-py-5`}>Bookmarks</li>
               </ul>
             </div>
     </form>

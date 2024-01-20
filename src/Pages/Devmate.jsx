@@ -35,6 +35,13 @@ function Devmate() {
       })
       setData(sortedData)
     }
+    if(sorrt === 5){
+      const sortedData = [...data].filter((item)=>item.Bookmarked === true)
+      setData(sortedData)
+    }
+    if(sorrt === 0){
+      setData(datas)
+    }
   },[sorrt,data])
 
   useEffect(()=>{
