@@ -1,4 +1,5 @@
 import React from 'react'
+import { Envelope, GeoAlt, Phone } from "react-bootstrap-icons";
 
 export default function ContactUs() {
     return (
@@ -15,19 +16,25 @@ export default function ContactUs() {
                     <div className="col-lg-4" data-aos="fade-right" data-aos-delay="100">
                         <div className="info">
                             <div className="address">
-                                <i className="bi bi-geo-alt"></i>
+                                <div className="icon">
+                                    <GeoAlt />
+                                </div>
                                 <h4>Location:</h4>
                                 <p>Technology Students' Gymkhana, IIT Kharagpur</p>
                             </div>
 
                             <div className="email">
-                                <i className="bi bi-envelope"></i>
+                                <div className="icon">
+                                    <Envelope />
+                                </div>
                                 <h4>Email:</h4>
                                 <p>devsoc.iitkgp@gmail.com</p>
                             </div>
 
                             <div className="phone">
-                                <i className="bi bi-phone"></i>
+                                <div className="icon">
+                                    <Phone />
+                                </div>
                                 <h4>Call:</h4>
                                 <p>+91 93548 17605</p>
                             </div>

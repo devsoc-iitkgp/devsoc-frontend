@@ -1,8 +1,8 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 /* Just trying */
 .Circle{
@@ -241,6 +241,10 @@
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   }
+
+  #header.header-scrolled nav a {
+    color: #010483;
+  }
   
   @supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
     (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
@@ -306,7 +310,7 @@
     font-size: 15px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    color: #010483;
+    color: white;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -961,7 +965,7 @@
     transition: 0.5s;
   }
   
-  .about .icon-box .icon i {
+  .about .icon-box .icon div.icon {
     color: #235AF8;
     font-size: 32px;
   }
@@ -1113,7 +1117,7 @@
     border-radius: 20px;
   }
   
-  .features .icon-box i {
+  .features .icon-box div.icon {
     font-size: 32px;
     padding-right: 10px;
     line-height: 1;
@@ -1158,7 +1162,7 @@
     color: white;
   }
   
-  .counts .count-box i {
+  .counts .count-box div.icon {
     position: absolute;
     top: -25px;
     left: 50%;
@@ -1635,7 +1639,7 @@
     /* background: #fff; */
   }
   
-  .contact .info i {
+  .contact .info div.icon {
     font-size: 20px;
     color: #3f43fd;
     float: left;
@@ -1669,9 +1673,9 @@
     margin-top: 40px;
   }
   
-  .contact .info .email:hover i,
-  .contact .info .address:hover i,
-  .contact .info .phone:hover i {
+  .contact .info .email:hover div.icon,
+  .contact .info .address:hover div.icon,
+  .contact .info .phone:hover div.icon {
     background: #3f43fd;
     color: #fff;
   }
@@ -1851,7 +1855,7 @@
     margin: 0;
   }
   
-  #footer .footer-top .footer-links ul i {
+  #footer .footer-top .footer-links ul div.icon {
     padding-right: 2px;
     color: #61ebba;
     font-size: 18px;

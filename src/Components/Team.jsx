@@ -10,6 +10,7 @@ import Aman from "../assets/img/team/aman_new.jpg"
 import NileshDas from "../assets/img/team/Cory_House.jpg"
 import ShiveshChaturvedi from "../assets/img/team/Shivesh_Chaturvedi_1.jpg"
 import TejasAmbhore from "../assets/img/team/Tejas_Ambhore_1.jpg"
+import { EnvelopeFill, Facebook, Linkedin } from 'react-bootstrap-icons'
 
 export default function Team() {
     const members = [
@@ -136,10 +137,10 @@ export default function Team() {
                                                 <div className="member-info">
                                                     <h4 style={{ fontFamily: "'Merriweather Sans', sans-serif;"}}>{member.name}</h4>
                                                 <p style={{ fontFamily: "'Merriweather Sans', sans-serif;"}}>{position}</p>
-                                                <div className="social">
-                                                    <a href={member.fbLink} target="_blank"><i className="bi bi-facebook"></i></a>
-                                                    <a href={member.emailLink} target="_blank"><i className="bi bi-envelope-fill"></i></a>
-                                                    <a href={member.linkedinLink} target="_blank"><i className="bi bi-linkedin"></i></a>
+                                                <div className="social" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                                    <a style={{margin: "0.3rem"}} href={member.fbLink} target="_blank"><div className="icon"><Facebook /></div></a>
+                                                    <a style={{margin: "0.3rem"}} href={member.emailLink} target="_blank"><div className="icon"><EnvelopeFill /></div></a>
+                                                    <a style={{margin: "0.3rem"}} href={member.linkedinLink} target="_blank"><div className="icon"><Linkedin /></div></a>
                                                 </div>
                                             </div>
                                         </div>
