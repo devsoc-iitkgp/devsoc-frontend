@@ -1,4 +1,11 @@
-import React from 'react'
+import StoreLineIcon from "remixicon-react/StoreLineIcon";
+import BarChartBoxLineIcon from "remixicon-react/BarChartBoxLineIcon";
+import CalendarTodoLineIcon from "remixicon-react/CalendarTodoLineIcon";
+import ContactsLineIcon from "remixicon-react/ContactsLineIcon";
+import BuildingLineIcon from "remixicon-react/BuildingLineIcon";
+import MicLineIcon from "remixicon-react/MicLineIcon";
+import FileList3LineIcon from "remixicon-react/FileList3LineIcon";
+import MenuLineIcon from "remixicon-react/MenuLineIcon";
 
 export default function Features() {
     return (
@@ -13,49 +20,65 @@ export default function Features() {
                 <div className="row" data-aos="fade-left">
                     <div className="col-lg-3 col-md-4">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                            <i className="ri-store-line" style={{ color: "#ffbb2c" }}></i>
+                            <div className="icon">
+                                <StoreLineIcon style={{ color: "#ffbb2c" }} />
+                            </div>
                             <h3><a href="">Buy and sell</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                            <i className="ri-bar-chart-box-line" style={{ color: "#5578ff" }}></i>
+                            <div className="icon">
+                                <BarChartBoxLineIcon style={{ color: "#5578ff" }} />
+                            </div>
                             <h3><a href="">Results</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                            <i className="ri-calendar-todo-line" style={{ color: "#e80368" }}></i>
+                            <div className="icon">
+                                <CalendarTodoLineIcon style={{ color: "#e80368" }} />
+                            </div>
                             <h3><a href="">Slot booking</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                            <i className="ri-contacts-line" style={{ color: "#e361ff" }}></i>
+                            <div className="icon">
+                                <ContactsLineIcon style={{ color: "#e361ff" }} />
+                            </div>
                             <h3><a href="">Contacts</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="250">
-                            <i className="ri-building-line" style={{ color: "#47aeff" }}></i>
+                            <div className="icon">
+                                <BuildingLineIcon style={{ color: "#47aeff" }} />
+                            </div>
                             <h3><a href="">Halls</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                            <i className="ri-mic-line" style={{ color: "#ffa76e" }}></i>
+                            <div className="icon">
+                                <MicLineIcon style={{ color: "#ffa76e" }} />
+                            </div>
                             <h3><a href="">Announcements</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="350">
-                            <i className="ri-file-list-3-line" style={{ color: "#11dbcf" }}></i>
+                            <div className="icon">
+                                <FileList3LineIcon style={{ color: "#11dbcf" }} />
+                            </div>
                             <h3><a href="">Events</a></h3>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 mt-4">
                         <div className="icon-box" data-aos="zoom-in" data-aos-delay="400">
-                            <i className="ri-menu-line" style={{ color: "#4233ff" }}></i>
+                            <div className="icon">
+                                <MenuLineIcon style={{ color: "#4233ff" }} />
+                            </div>
                             <h3><a href="">Mess menu</a></h3>
                         </div>
                     </div>
