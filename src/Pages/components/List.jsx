@@ -29,7 +29,7 @@ const Card = ({setSelected,card}) => {
         setSelected(card)
       }}
     >
-      <div className="tw-w-[350px] tw-h-[400px] tw-bg-[#dfd2e] tw-mb-4 tw-relative">
+      <div className="tw-w-[250px] tw-h-[350px] sm:tw-w-[350px] sm:tw-h-[400px] tw-bg-[#dfd2e] tw-mb-4 tw-relative">
         <div className="tw-absolute tw-top-0 tw-right-0 tw-z-[45] tw-h-7 tw-m-3 hover:tw-scale-110 tw-duration-300">
           <img onClick={(e)=>{
             e.stopPropagation();

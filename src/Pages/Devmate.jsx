@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react"
 import List from "./components/List"
 import Modal from "./components/Modal"
@@ -42,7 +43,7 @@ function Devmate() {
     if(sorrt === 0){
       setData(datas)
     }
-  },[sorrt,data])
+  },[sorrt])
 
   useEffect(()=>{
     if(searchval){
