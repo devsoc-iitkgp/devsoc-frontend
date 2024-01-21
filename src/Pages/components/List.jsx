@@ -48,7 +48,7 @@ const Card = ({setSelected,card}) => {
         </div>
         <div className="tw-absolute tw-bottom-0 tw-h-[45%] tw-w-full tw-flex tw-flex-col">
           <div className="tw-pt-2 tw-px-4 tw-text-2xl tw-font-bold">{card.ProjectName}</div>
-          <div className="tw-px-4 tw-text-sm cutoff tw-text-ellipsis">{card.ProjectDescription}<div className="tw-absolute tw-right-0 tw-top-0 tw-translate-y-[398%] tw-translate-x-[-20%] tw-bg-[#dfd2e1] tw-pl-5 tw-text-[#020049] tw-font-bold hover:tw-text-[#4338CA]">more details</div>
+          <div className="tw-px-4 tw-text-sm cutoff tw-text-ellipsis tw-text-gray-500">{card.ProjectDescription}<div className="tw-absolute tw-right-0 tw-top-0 tw-translate-y-[398%] tw-translate-x-[-20%] tw-bg-[#dfd2e1] tw-pl-5 tw-text-[#020049] tw-font-bold hover:tw-text-[#4338CA]">more details</div>
           </div>
           <div className="tw-bg-[#dfd2e1] tw-flex tw-flex-wrap tw-gap-2 tw-px-4 tw-pb-5 tw-py-3 tw-rounded-b-sm tw-w-full tw-h-[70%] tw-relative tw-overflow-y-scroll">
             {card.Tags.map((tag)=>{

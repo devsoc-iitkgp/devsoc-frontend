@@ -47,7 +47,7 @@ function Modal({selected, setSelected}) {
           duration:0.5
         }} className="tw-bg-[#dfd2e1] tw-w-[300px] sm:tw-w-[500px] tw-px-4 tw-py-2">
           <div className="tw-text-2xl tw-font-bold">{selected.ProjectName}</div>
-          <div className=" tw-text-sm tw-py-2 tw-h-[100px] tw-overflow-y-scroll">
+          <div className="tw-text-gray-500 tw-text-sm tw-py-2 tw-h-[100px] tw-overflow-y-scroll">
             <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {selected.ProjectDescription}
           </div>
