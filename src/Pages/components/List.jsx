@@ -11,7 +11,7 @@ import bookmarkFilled from "./assets/bookmark.png";
 const Card = ({setSelected,card}) => {
   const [liked, setLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(card.LikeCount);
-  const [bookmarked, setBookmarked] = useState(false);
+  const [bookmarked, setBookmarked] = useState(card.Bookmarked);
   const [reqclick, setReqClick] = useState(false);
   return(
     <motion.div className="tw-bg-[#dfd2e1] tw-pb-0 tw-cursor-pointer tw-rounded-md tw-shadow-2xl"
@@ -83,7 +83,7 @@ function List({setSelected,data}) {
   },[data])
   return (
     <div className="tw-p-4">
-      <div className="tw-flex tw-flex-wrap tw-gap-16 tw-justify-center tw-items-center">
+      <div className="tw-flex tw-flex-wrap tw-gap-16 tw-justify-center tw-items-center tw-mb-10">
         {data.map((card)=>(
           <Card key={card.ProjectID} setSelected={setSelected} card={card}/>
         ))}
