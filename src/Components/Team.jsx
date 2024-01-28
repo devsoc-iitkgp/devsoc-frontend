@@ -122,8 +122,8 @@ export default function Team() {
                 </div>
 
                 {
-                    members.map((member) => (
-                        <div className="row" data-aos="fade-left" id="cards">
+                    members.map((member, idx) => (
+                        <div className="row" data-aos="fade-left" id="cards" key={idx}>
                             <div className="twelve">
                                 <h1>{member.position}{member.members.length > 1 ? 's' : ''}</h1>
                             </div>
