@@ -20,8 +20,15 @@ import Circle from "./Components/Circle";
 gsap.registerPlugin(ScrollTrigger);
 
 import useScript from "./Hooks/useScript";
+import SignIn from "./Components/SignIn";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUserAsync } from "./redux/user/userSlice";
 
 function App() {
+    const [showPopup, setShowPopup] = React.useState(false)
+    const [showLogin, setShowLogin] = React.useState(true)
+    const dispatch = useDispatch()
+    const user = useSelector(state => state.user.user)
     React.useEffect(() => {
         gsap.to('body', {
             backgroundColor: '#E2A9FF',
@@ -36,9 +43,20 @@ function App() {
     }, [])
     useScript("/js/main.js")
     useScript("/js/notice.js")
+    useScript("/js/script.js")
+
+    React.useEffect(() => {
+        const token = localStorage.getItem("token")
+        if (token) {
+            dispatch(fetchUserAsync(token))
+        }
+    }, [])
     return (
-        <>
-            <Header />
+        <div onClick={() => {
+            setShowPopup(false);
+        }}>
+            {(!user) && <SignIn showPopup={showPopup} showLogin={showLogin} setShowLogin={setShowLogin} />}
+            <Header setShowPopup={setShowPopup} />
             <Router>
                 <Routes>
                     <Route index element={<Home />} />
@@ -46,7 +64,7 @@ function App() {
                 </Routes>
             </Router>
             <Footer />
-        </>
+        </div>
     )
 }
 

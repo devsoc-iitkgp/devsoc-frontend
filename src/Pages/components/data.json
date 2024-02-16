@@ -7,11 +7,13 @@
         "Tags": ["tag1", "tag2"],
         "TotalCapacity": 20,
         "ActiveMembers": 5,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/310",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/310",
         "ButtonClicks": 100,
+        "LikeCount": 20,
         "Date": "2024-01-19",
         "Requests": ["user002", "user003"],
-        "Members": ["user004", "user005"]
+        "Members": ["user004", "user005"],
+        "Bookmarked": true
       },
       {
         "ProjectID": "2",
@@ -21,11 +23,13 @@
         "Tags": ["tag3", "tag4"],
         "TotalCapacity": 15,
         "ActiveMembers": 8,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/309",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/309",
         "ButtonClicks": 75,
+        "LikeCount": 20,
         "Date": "2024-01-20",
         "Requests": ["user007", "user008"],
-        "Members": ["user009", "user010"]
+        "Members": ["user009", "user010"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "3",
@@ -35,11 +39,13 @@
         "Tags": ["Appwrite", "Next JS"],
         "TotalCapacity": 25,
         "ActiveMembers": 12,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/308",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/308",
         "ButtonClicks": 120,
+        "LikeCount": 20,
         "Date": "2024-01-21",
         "Requests": ["user012", "user013"],
-        "Members": ["user014", "user015"]
+        "Members": ["user014", "user015"],
+        "Bookmarked": true
       },
       {
         "ProjectID": "4",
@@ -49,11 +55,13 @@
         "Tags": ["tag7", "tag8"],
         "TotalCapacity": 18,
         "ActiveMembers": 6,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/300",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/300",
         "ButtonClicks": 90,
+        "LikeCount": 20,
         "Date": "2024-01-22",
         "Requests": ["user017", "user018"],
-        "Members": ["user019", "user020"]
+        "Members": ["user019", "user020"],
+        "Bookmarked": true
       },
       {
         "ProjectID": "5",
@@ -63,11 +71,13 @@
         "Tags": ["tag9", "tag10"],
         "TotalCapacity": 30,
         "ActiveMembers": 10,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/307",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/307",
         "ButtonClicks": 150,
+        "LikeCount": 20,
         "Date": "2024-01-23",
         "Requests": ["user022", "user023"],
-        "Members": ["user024", "user025"]
+        "Members": ["user024", "user025"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "6",
@@ -77,11 +87,13 @@
         "Tags": ["tag11", "tag12"],
         "TotalCapacity": 22,
         "ActiveMembers": 7,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/301",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/301",
         "ButtonClicks": 110,
+        "LikeCount": 20,
         "Date": "2024-01-24",
         "Requests": ["user027", "user028"],
-        "Members": ["user029", "user030"]
+        "Members": ["user029", "user030"],
+        "Bookmarked": true
       },
       {
         "ProjectID": "7",
@@ -91,11 +103,13 @@
         "Tags": ["tag13", "tag14"],
         "TotalCapacity": 28,
         "ActiveMembers": 9,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/311",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/311",
         "ButtonClicks": 140,
+        "LikeCount": 20,
         "Date": "2024-01-25",
         "Requests": ["user032", "user033"],
-        "Members": ["user034", "user035"]
+        "Members": ["user034", "user035"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "8",
@@ -105,11 +119,13 @@
         "Tags": ["tag15", "tag16"],
         "TotalCapacity": 17,
         "ActiveMembers": 5,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/302",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/302",
         "ButtonClicks": 85,
+        "LikeCount": 20,
         "Date": "2024-01-26",
         "Requests": ["user037", "user038"],
-        "Members": ["user039", "user040"]
+        "Members": ["user039", "user040"],
+        "Bookmarked": true
       },
       {
         "ProjectID": "9",
@@ -119,11 +135,13 @@
         "Tags": ["tag17", "tag18"],
         "TotalCapacity": 21,
         "ActiveMembers": 8,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/303",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/303",
         "ButtonClicks": 105,
+        "LikeCount": 20,
         "Date": "2024-01-27",
         "Requests": ["user042", "user043"],
-        "Members": ["user044", "user045"]
+        "Members": ["user044", "user045"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "10",
@@ -133,11 +151,13 @@
         "Tags": ["tag19", "tag20"],
         "TotalCapacity": 24,
         "ActiveMembers": 11,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/304",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/304",
         "ButtonClicks": 115,
+        "LikeCount": 20,
         "Date": "2024-01-28",
         "Requests": ["user047", "user048"],
-        "Members": ["user049", "user050"]
+        "Members": ["user049", "user050"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "11",
@@ -147,11 +167,13 @@
         "Tags": ["tag21", "tag22"],
         "TotalCapacity": 26,
         "ActiveMembers": 7,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/305",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/305",
         "ButtonClicks": 125,
+        "LikeCount": 20,
         "Date": "2024-01-29",
         "Requests": ["user052", "user053"],
-        "Members": ["user054", "user055"]
+        "Members": ["user054", "user055"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "12",
@@ -161,11 +183,13 @@
         "Tags": ["tag23", "tag24"],
         "TotalCapacity": 19,
         "ActiveMembers": 6,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/306",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/306",
         "ButtonClicks": 95,
+        "LikeCount": 20,
         "Date": "2024-01-30",
         "Requests": ["user057", "user058"],
-        "Members": ["user059", "user060"]
+        "Members": ["user059", "user060"],
+        "Bookmarked": false
       },
       {
         "ProjectID": "13",
@@ -175,10 +199,12 @@
         "Tags": ["tag25", "tag26"],
         "TotalCapacity": 29,
         "ActiveMembers": 16,
-        "Thumbnail": "https:\/\/picsum.photos\/700\/321",
+        "Thumbnail": "https:\/\/picsum.photos\/500\/321",
         "ButtonClicks": 55,
+        "LikeCount": 20,
         "Date": "2024-01-03",
         "Requests": ["user037", "user038"],
-        "Members": ["user049", "user040"]
+        "Members": ["user049", "user040"],
+        "Bookmarked": false
       }
 ]

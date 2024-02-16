@@ -1,0 +1,12 @@
+.cutoff{
+    --max-lines: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    --webkit-line-clamp: var(--max-lines);
+    text-overflow: ellipsis;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
